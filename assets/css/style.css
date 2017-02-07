@@ -1,0 +1,104 @@
+html, body {
+	/*background: url("../images/crystal7-bg.jpg");*/
+	background-color: #CDCED0;
+	height: 100%;
+	background-repeat: repeat;
+}
+
+.navbar-brand {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 25px;
+	
+}
+
+.navbar-default {
+	background-color: #000;
+	border-color: #000;
+	
+}
+.navbar-default .navbar-brand {
+	color: #bdbbbb;
+	padding-bottom: 0px;
+}
+
+.navbar {
+	margin-bottom: 0px;
+	border-radius: 0px;
+
+}
+
+.jumbo {
+	font-family: Helvetica, sans-serif;
+	background: #00576D;
+	padding: 20px 20px;
+	margin: 0px;
+	color: #bdbbbb;
+	font-size: 16px;
+	font-weight: lighter;
+	line-height: 35px;
+	letter-spacing: 0.8px;
+}
+
+/*.jumbo-bottom {
+	font-family: Helvetica, sans-serif;
+	background: #00576D;
+	padding: 30px 20px;
+	margin: 0px;
+	color: white;
+	font-size: 18px;
+	font-weight: lighter;
+	line-height: 35px;
+	text-align: center;
+}*/
+
+#section-left,
+#section-right {
+ 	background-color: #002933;
+ 	/*background-color: #00667F;*/
+ 	text-align: center;
+ 	color: #bdbbbb;
+ 	height: 200px;
+ 	padding-top: 55px;
+
+ }
+
+img {
+	width: 150px;
+	padding-top: 25px;
+}
+
+
+ .crystal-image {
+	width: 20px;
+   }
+
+.jumbo-bottom {
+	background: url("../images/crystal_banner7.png");
+	/*background: url("../images/crystal_banner2.jpg");*/
+	height: 220px; 
+	
+	/*background-repeat: repeat;*/
+	
+}
+
+footer
+{
+	background-color: #000;
+    color: #bdbbbb;
+    text-align: center;
+    font-size: 10px;
+    padding: 15px;
+    height: 50px;
+}
+
+.wrapper {
+  	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/*margin: 0 auto -50px;*/
+}
+
+.push {
+  	height: 50px;
+}
+  	

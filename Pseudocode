@@ -1,0 +1,19 @@
+
+4 images, where each image is assigned to a random number between 1 to 12
+	- for every refreshing, the numbers should be randomly reassigned
+
+on clicking on the image the numbers should be incremented and be displayed as score display.
+
+random number display (19 to 120) as target display
+
+
+
+
+win and loss display (counter)
+
+If target display is equal = score display --> user wins
+If score display > target display --> user loses
+
+
+#bdbbbb
+#E8BD93
