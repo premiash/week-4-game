@@ -58,9 +58,16 @@ html, body {
  	text-align: center;
  	color: #bdbbbb;
  	height: 200px;
- 	padding-top: 55px;
+ 	padding-top: 40px;
 
  }
+
+h4 {
+	
+ 	color: #bdbbbb;
+ 	padding-right: 20px;
+ 	font-size: 20px;
+}
 
 img {
 	width: 150px;

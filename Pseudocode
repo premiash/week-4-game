@@ -1,11 +1,13 @@
 
+random number display (19 to 120) as target display
+
+
 4 images, where each image is assigned to a random number between 1 to 12
 	- for every refreshing, the numbers should be randomly reassigned
 
+	---> the images can be in an array and each image can be assigned with a value between 1 and 12.
+
 on clicking on the image the numbers should be incremented and be displayed as score display.
-
-random number display (19 to 120) as target display
-
 
 
 
