@@ -1,20 +1,18 @@
 
-random number display (19 to 120) as target display
+1. Target Score  - Generate random number display (19 to 120) 
 
+2. generate 4 random numbers between 1 to 12
 
-4 images, where each image is assigned to a random number between 1 to 12
-	- for every refreshing, the numbers should be randomly reassigned
+3. 4 images - each image is assigned to the generated random number 
+	
+4. Total Score - 
 
-	---> the images can be in an array and each image can be assigned with a value between 1 and 12.
+on clicking on the image the numbers should be incremented and be displayed as Total Score display.
 
-on clicking on the image the numbers should be incremented and be displayed as score display.
+5. win and loss display (counter)
 
-
-
-win and loss display (counter)
-
-If target display is equal = score display --> user wins
-If score display > target display --> user loses
+	If target display is equal = score display --> user wins
+	If score display > target display --> user loses
 
 
 #bdbbbb
