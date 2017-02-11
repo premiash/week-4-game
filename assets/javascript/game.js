@@ -1,4 +1,4 @@
-var initializeGame = function()
+/*var initializeGame = function()
 	{
 		var counter = 0;
 		var crystalValues = 0;
@@ -8,7 +8,7 @@ var initializeGame = function()
 
 		$("#targetScore").text("Target Score : " + targetScore);
 
-	}
+	}*/
 
 var minNumber = 19;
 var maxNumber = 120
@@ -26,7 +26,7 @@ var gameover = false;
 var wins = 0;
 var losses = 0;
 
-var yourScore = initializeGame();
+//var yourScore = initializeGame();
 
 
 $("#targetScore").text("Target Score : " + targetScore);
@@ -59,29 +59,29 @@ function updateYourScore(crystalScore)
 
 	if(yourScore > targetScore)
 	{
-		loses++;
+		//loses++;
 
 		$("#loses").html("Loses :" + loses);
 
 		console.log(loses);
-		// alert("You lost!!");
-		gameover = true;
+		alert("You lost!!");
+		//gameover = true;
 
 	} else if (yourScore === targetScore)
 	{
-		wins++;
+		//wins++;
 
 		$("#wins").html("Wins :" + wins);
-		// alert("You won!!!");
-		gameover = true;
+		alert("You won!!!");
+		//gameover = true;
 	}
 
-	if (gameover) 
+	/*if (gameover) 
 	{
 		gameover = false;
 		yourScore = initializeGame();
 		return;
-	}
+	}*/
 }
 
 function calculateRandomNumber(minNumber, maxNumber)
