@@ -1,37 +1,31 @@
-/*var initializeGame = function()
-	{
-		var counter = 0;
-		var crystalValues = 0;
-
-		var targetScore = calculateRandomNumber(minNumber, maxNumber); //FromRange
-		var yourScore = 0;
-
-		$("#targetScore").text("Target Score : " + targetScore);
-
-	}*/
-
 var minNumber = 19;
 var maxNumber = 120
-
-var counter = 0;
-
-var crystalValues = [];
-var excludedValues = [];
-
-var targetScore = calculateRandomNumber(minNumber, maxNumber); //FromRange
-var yourScore = 0;
-
-var gameover = false;
 
 var wins = 0;
 var losses = 0;
 
-//var yourScore = initializeGame();
+var crystalValues = [];
+var excludedValues = [];
 
+var targetScore;
+var yourScore;
 
-$("#targetScore").text("Target Score : " + targetScore);
+var initializeGame = function()
+{
+	crystalValues = [];
+	excludedValues = [];
 
-calculateCrystalValues();
+	targetScore = calculateRandomNumber(minNumber, maxNumber); //FromRange
+	yourScore = 0;
+
+	calculateCrystalValues();
+
+	$("#targetScore").text("Target Score: " + targetScore);
+
+	$("#yourScore").text("Your Score: " + yourScore);
+}
+
+initializeGame();
 
 $("#crystal-imageone").on('click', function(event) {
 	updateYourScore(crystalValues[0]);
@@ -55,33 +49,29 @@ function updateYourScore(crystalScore)
 
 	yourScore += crystalScore;
 
-	$("#yourScore").text("Your Score : " + yourScore);
+	$("#yourScore").text("Your Score: " + yourScore);
 
 	if(yourScore > targetScore)
 	{
-		//loses++;
+		losses++;
 
-		$("#loses").html("Loses :" + loses);
+		$("#loses").html("Losses: " + losses);
 
-		console.log(loses);
-		alert("You lost!!");
-		//gameover = true;
+		console.log("losses :" + losses);
+		
+		//alert("You lost!!");
+		initializeGame();
 
-	} else if (yourScore === targetScore)
+	} 
+	else if (yourScore === targetScore)
 	{
-		//wins++;
+		wins++;
 
-		$("#wins").html("Wins :" + wins);
-		alert("You won!!!");
-		//gameover = true;
+		$("#wins").html("Wins: " + wins);
+		console.log("Wins :" + wins);
+		//alert("You won!!!");
+		initializeGame();
 	}
-
-	/*if (gameover) 
-	{
-		gameover = false;
-		yourScore = initializeGame();
-		return;
-	}*/
 }
 
 function calculateRandomNumber(minNumber, maxNumber)
@@ -102,7 +92,6 @@ function calculateRandomNumber2()
 {
 	var hasRandomNo = false;
 	var randomNumber;
-	// var test = 0;
 
 	do
 	{
@@ -112,8 +101,6 @@ function calculateRandomNumber2()
 		{
 			hasRandomNo = true;
 		}
-		// test++;
-		// console.log('test');
 	}
 	while (!hasRandomNo);
 	
@@ -133,5 +120,3 @@ function isNotExcludedValues(randomNumber, excludedValues)
 	}
 	return true;
 }
-
-

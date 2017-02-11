@@ -4,10 +4,9 @@
 2. generate 4 random numbers between 1 to 12
 
 3. 4 images - each image is assigned to the generated random number 
-	
-4. Total Score - 
+	on clicking on the image the numbers should be incremented and be displayed as Total Score display.
 
-on clicking on the image the numbers should be incremented and be displayed as Total Score display.
+4. Total Score - to be rest after each win and lose
 
 5. win and loss display (counter)
 
